@@ -4,7 +4,7 @@
 
 Using the [NativeScript CLI](https://docs.nativescript.org/docs-cli/start) to build an Android app took around 6 minutes on a Windows system compared to around 1 minute on our old Mac.
 
-Debugging showed that the process hangs for 3 minutes when trying to get the currenty installed npm version in [this script](https://github.com/NativeScript/nativescript-doctor/blob/81fe42a2cd63812b138bcd579ecbb384d83bcf0d/lib/sys-info.ts#L97).
+Debugging showed that the process hangs for 3 minutes when trying to get the currently installed npm version in [this script](https://github.com/NativeScript/nativescript-doctor/blob/81fe42a2cd63812b138bcd579ecbb384d83bcf0d/lib/sys-info.ts#L97).
 
 To get the npm version, NativeScript executes the command `npm -v` in a [child process](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback) and waits for the output.
 
