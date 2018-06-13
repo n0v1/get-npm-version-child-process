@@ -33,13 +33,13 @@ child.on('error', (err) => {
 
 child.on('exit', (code) => {
   console.log(new Date(Date.now()).toLocaleString(), '- EXIT -', code)
-  const activeHandles = process._getActiveHandles()
-  const activeRequests = process._getActiveRequests()
-  console.log('active handles:', activeHandles.length, 'active requests:', activeRequests.length)
+  // const activeHandles = process._getActiveHandles()
+  // const activeRequests = process._getActiveRequests()
+  // console.log('active handles:', activeHandles.length, 'active requests:', activeRequests.length)
 
-  intervalId = setInterval(() => {
-    wtfnode.dump()
-  }, 1000)
+  // intervalId = setInterval(() => {
+  //   wtfnode.dump()
+  // }, 1000)
 })
 
 child.on('close', (code) => {
