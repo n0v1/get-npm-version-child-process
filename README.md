@@ -64,11 +64,11 @@ npm 4.4.0 introduced an [update notification feature](https://github.com/npm/npm
 
 The update check feature uses the [update-notifier](https://github.com/yeoman/update-notifier) package that uses the [latest-version](https://github.com/sindresorhus/latest-version) package which in turn uses [package-json](https://github.com/sindresorhus/package-json). package-json currently does not support proxies and the author [seems not to be willing to implement proxy support](https://github.com/sindresorhus/package-json/issues/22#issuecomment-185158091).
 
-## Workaround
+## Workarounds
 
 See https://github.com/yeoman/update-notifier#user-settings
 
-- Set environment variable NO_UPDATE_NOTIFIER=1
+- Set environment variable `NO_UPDATE_NOTIFIER=1`
 - Use `--no-update-notifier` flag
 - Set `"optOut": true` in `~/.config/configstore/update-notifier-[your-module-name].json`
 
